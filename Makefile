@@ -6,6 +6,5 @@ deps:
 
 build:
 	go mod tidy && \
-	templ generate && \
 	tailwind -o public/static/main.css -i public/preset.css && \
-	go build -o tmp/server cmd/server.go
+	go build -o tmp/server cmd/main.go

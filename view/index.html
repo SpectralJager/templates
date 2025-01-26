@@ -1,0 +1,22 @@
+{{define "index"}}
+{{template "base_head"}}
+<container x-data="{counter: 0}" class="w-screen h-screen flex flex-col gap-4 items-center justify-center">
+    <text class="text-4xl text-primary" x-text="counter"></text>
+    <row class="flex gap-4">
+        <button class="btn" x-on:click="counter++">
+            {{template "symbol" "add"}}
+        </button>
+        <button class="btn" x-on:click="counter--">
+            {{template "symbol" "remove"}}
+        </button>
+    </row>
+    <form action="/" method="post">
+        <input type="text" name="counter" x-model="counter" hidden>
+        <button class="btn btn-primary">
+            {{template "symbol" "upload"}}
+            Submit
+        </button>
+    </form>
+</container>
+{{template "base_tail"}}
+{{end}}

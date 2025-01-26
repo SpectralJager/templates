@@ -1,4 +1,4 @@
-Repository contains template for Golang, Templ, Tailwindcss, AlpineJS and HTMX project structure.
+Repository contains template for Golang, Templates, Tailwindcss and AlpineJS project structure.
 ```
-git clone -b htmx --single-branch https://github.com/SpectralJager/templates.git
+git clone -b alpine --single-branch https://github.com/SpectralJager/templates.git
 ```
